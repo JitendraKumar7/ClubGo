@@ -1,0 +1,135 @@
+package com.meo.kompasspro.interfaces;
+
+public interface AppConstants {
+
+    int HALF = 500;
+    int DELAY = 1000;
+    int SPLASH = 6000;
+    int SECONDS = 2000;
+    int TRACKING = 4000;
+
+    int MAX_RESULT = 1;
+    int GET_ADDRESS = 0;
+    int REQUEST_CODE = 781;
+    int REQUEST_CHECK_IO = 43;
+    int REQUEST_LOCATION = 54;
+    int REQUEST_CONTACTS = 75;
+    int REQUEST_PICK_FILE = 67;
+    int REQUEST_NOTIFICATION = 81;
+    int REQUEST_IMAGE_CAPTURE = 0;
+    int REQUEST_SHARE_LOCATION = 67;
+    int REQUEST_IMAGE_FROM_GALLERY = 1;
+    int REQUEST_LOCATION_CHECK_SETTINGS = 58;
+
+
+    int REQUEST_PERMISSION_MESSAGE = 10;
+    int REQUEST_PERMISSION_STORAGE = 11;
+    int REQUEST_PERMISSION_CONTACTS = 12;
+    int REQUEST_PERMISSION_LOCATION = 13;
+
+    String TAG = "kompass";
+    String STATUS = "status";
+    String RESULT = "result";
+    String MESSAGE = "message";
+    String TYPES = "KompassPro";
+    String DEVICE_TYPES = "Android";
+    String NOTIFICATION = "MyFirebaseMessagingService";
+    String NOTIFICATION_ID = "MyFirebaseMessagingServiceId";
+
+    // SharedPreferences Start's
+    String IS_LOGIN = "com.meo.kompass.isLogin";
+    String IS_TRACKER = "com.meo.kompass.isTracker";
+    String IS_TRACK_ADMIN = "com.meo.kompass.isTrackAdmin";
+    String IS_SHOWING_LOG = "com.meo.kompass.isShowingLog";
+    String ALARM_RECEIVER = "com.meo.kompass.alarmReceiver";
+    String USER_LOGIN_DATA = "com.meo.kompass.user.login.data";
+    String LOCATION_EDITED = "com.meo.kompass.user.location.edit";
+    String CALENDER_SELECTED = "com.meo.kompass.calendar.selected";
+    String LAST_NOTIFICATION = "com.meo.kompass.last.notification";
+    String USER_SAVE_CONTACT = "com.meo.kompass.user.save.contact";
+    String USER_SAVE_CALL_LOGS = "com.meo.kompass.user.save.call_logs";
+    String CALENDER_SELECTED_TYPE = "com.meo.kompass.calendar.selected.type";
+    // SharedPreferences End's
+
+    String PLAY_STORE_APP_URL = "https://goo.gl/7pjw2s";
+    String SEND_NOTIFICATION_BROADCAST = "com.meo.kompass.notification.broadcast";
+
+    String APP_URL = "https://play.google.com/store/apps/details?id=com.meo.kompasspro";
+    String APP_SHARE_MESSAGE = "Hey check out my app at: " + APP_URL;
+
+    // URL's Start's
+    String BASE_URL = "https://meo.co.in/meoApiPro/v4/index.php/";
+
+    String USER_EXIST = BASE_URL + "userExist";
+    String USER_CHECK = BASE_URL + "userCheck";
+    String USER_LOGIN = BASE_URL + "mobileLogin";
+    String USER_LOGOUT = BASE_URL + "userLogout";
+    String USER_REGISTER = BASE_URL + "userRegister";
+    String USER_GET_SUB_USERS = BASE_URL + "getSubUsers";
+    String USER_RESET_PASSWORD = BASE_URL + "resetPassword";
+    String USER_UPDATE_PICTURE = BASE_URL + "uploadNewImage";
+    String USER_CHANGE_PASSWORD = BASE_URL + "changePassword";
+    String USER_CHECK_MOBILE_EXIST = BASE_URL + "checkMobileExist";
+    String USER_CHECK_REFERRAL_CODE = BASE_URL + "checkReferralCode";
+    String USER_UPDATE_PROFILE_DETAIL = BASE_URL + "updateUserProfileDetail";
+
+
+    String USER_CHECK_IO = BASE_URL + "userCheckIO";
+    String USER_GET_CHECK_IO = BASE_URL + "getCheckIO";
+    String USER_CHECK_IO_SHARE = BASE_URL + "userCheckIOShare";
+
+    String USER_CHECK_IO_ORDER = BASE_URL + "userCheckIOWithOrderForm";
+    String USER_CHECK_IO_ACTIVITY = BASE_URL + "userCheckIOWithActivityForm";
+    String USER_CHECK_IO_EXPENSES = BASE_URL + "userCheckIOWithExpensesForm";
+    String USER_CHECK_IO_ATTACHMENTS = BASE_URL + "userCheckIOWithAttachment";
+
+    String USER_CHECK_IO_ORDER_SAVE = USER_CHECK_IO_ORDER + "Save";
+    String USER_CHECK_IO_ACTIVITY_SAVE = USER_CHECK_IO_ACTIVITY + "Save";
+    String USER_CHECK_IO_EXPENSES_SAVE = USER_CHECK_IO_EXPENSES + "Save";
+    String USER_CHECK_IO_ATTACHMENTS_SAVE = USER_CHECK_IO_ATTACHMENTS + "Save";
+
+
+    String USER_ADD_LOCATION = BASE_URL + "addLocation";
+    String USER_GET_LOCATION = BASE_URL + "getLocation";
+    String USER_EDIT_LOCATION = BASE_URL + "editLocation";
+    String USER_DELETE_LOCATION = BASE_URL + "deleteLocation";
+    String USER_SHARE_LOCATION = BASE_URL + "addSharedLocation";
+    String USER_DELETE_SHARE_LOCATION = BASE_URL + "deleteSharedLocation";
+    String USER_SAVE_SHARE_LOCATION = BASE_URL + "saveNotificationLocation";
+
+
+    String USER_ADD_EVENT = BASE_URL + "addCalendarEvent";
+    String USER_GET_EVENT = BASE_URL + "getCalendarEvent";
+    String USER_EDIT_EVENT = BASE_URL + "editCalendarEvent";
+    String USER_DELETE_EVENT = BASE_URL + "deleteCalendarEvent";
+
+
+    String TRACK_LOCATION = BASE_URL + "userTrackLocation";
+    String TRACK_USER_LOCATION = BASE_URL + "getUserTrackLocation";
+    String TRACK_ADMIN_LOCATION = BASE_URL + "getAllUserTrackLocation";
+
+
+    String POST_LOCATION = BASE_URL + "addAutoFeedLocation";
+    String NOTIFY_LOCATION = BASE_URL + "getKompassSharedLocation";
+    String NOTIFY_CHECK_IO = BASE_URL + "getKompassReceiveCheckinLocation";
+    String NOTIFY_DELETE_CHECK_IO = BASE_URL + "deleteKompassCheckinLocation";
+
+
+    String USER_TRACKING_STOP = BASE_URL + "liveTrackingStop";
+    String USER_REQUEST_TRACKING = BASE_URL + "requestTracking";
+    String USER_REQUEST_TRACKEE_LIST = BASE_URL + "listOfTrackee";
+    String USER_REQUEST_REQUEST_LIST = BASE_URL + "listOfTrackingRequest";
+    String USER_REQUEST_TRACKER_LIST = BASE_URL + "listOfTrackersOfTrackee";
+    String USER_REQUEST_REQUEST_ACCEPT = BASE_URL + "requestTrackingAccept";
+    String USER_REQUEST_REQUEST_DECLINE = BASE_URL + "requestTrackingDecline";
+
+    String MEO_URL = "https://meo.co.in/meoApiPro/v4/";
+    String MEO_MYK = MEO_URL + "myk_index.php/";
+    String MEO_FEE = MEO_URL + "index.php/";
+
+    String CREATE_ADMIN_LOGIN = MEO_FEE + "createKompassUserFreePlan";
+    String NOTIFY_MEO_DETAIL = MEO_MYK + "getSingleMykSharedDetails";
+    String NOTIFY_MEO_DELETE = MEO_MYK + "deleteMykSharedDetails";
+    String NOTIFY_MEO = MEO_MYK + "getMykSharedDetails";
+    // URL's End's
+}
