@@ -1,0 +1,245 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_220sdp"
+    tools:context="in.clubgo.app.events.FragmentToday">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/eventlist_ivMainImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_holder" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/eventbckimage" />
+
+    <TextView
+        android:id="@+id/eventlist_txtEventTrending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/txt_trending"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_7sdp"
+        android:fontFamily="sans-serif"
+        android:paddingRight="@dimen/_7sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:text="Trending"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/eventlist_frmEventOffer"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="right"
+        android:background="@mipmap/offrbox"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/eventlist_txtEventOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="sans-serif"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/eventlist_txtEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:padding="@dimen/_2sdp"
+            android:fontFamily="sans-serif"
+            android:text="Daler Mehandi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/frame_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventlist_txtEventName">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@+id/eventlist_txtEventName"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@mipmap/location_white" />
+
+            <TextView
+                android:id="@+id/eventlist_txtEventLocation"
+                android:fontFamily="sans-serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventlist_txtEventName"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:padding="@dimen/_2sdp"
+                android:text="DownTown, Gurgaon   2Km away"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame1_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_event">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@mipmap/watch" />
+
+            <TextView
+                android:id="@+id/eventlist_txtEventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:padding="@dimen/_2sdp"
+                android:fontFamily="sans-serif"
+                android:text="9 PM Onwards,Tuesday,15th Mar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/eventlist_txtEventTag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/event_nightlife"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="Nightlife"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/eventlist_txtEventTag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:background="@drawable/event_nightlife"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="Nightlife"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eventlist_txtEventDiscountedPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/eventlist_txtEventPrice"
+            android:layout_alignParentRight="true"
+            android:text="\u20B9 5,000"
+            android:fontFamily="sans-serif"
+            android:textColor="#ccc"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/eventlist_txtEventPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_book"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="18dp"
+            android:text="\u20B9"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linear_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <FrameLayout
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/eventlist_ivHeart"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:layout_toLeftOf="@+id/eventList_txtEventBook"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_heart" />
+
+                <ImageView
+                    android:id="@+id/eventlist_ivHeart_selected"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:layout_toLeftOf="@+id/eventList_txtEventBook"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_heart_selected"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/eventList_txtEventBook"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="Book"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

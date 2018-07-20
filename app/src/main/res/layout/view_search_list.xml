@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_3sdp">
+
+    <TextView
+        android:id="@+id/search_txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/search_imageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/search_txtTitle"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/search_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_txtTitle"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/search_txtDescripotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_txtName"
+        android:layout_alignStart="@+id/search_txtName"
+        android:layout_below="@+id/search_txtName"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:textSize="@dimen/_10sdp" />
+
+</RelativeLayout>

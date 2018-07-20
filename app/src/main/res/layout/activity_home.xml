@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/_40sdp"
+    android:paddingTop="@dimen/_3sdp"
+    tools:context="in.clubgo.app.home.ActivityHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/home_frmAround"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Trending"
+                    android:textColor="@color/darkBlack"
+                    android:textSize="@dimen/_17sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtAroundMore"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="MORE"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13sdp" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#ccc" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAround"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_157sdp"
+                android:padding="@dimen/_4sdp" />
+
+            <FrameLayout
+                android:id="@+id/home_frmHotspots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Hotspots"
+                    android:textColor="@color/darkBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtHotspotsMore"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="MORE"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13sdp" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#ccc" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvHotspots"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_125sdp"
+                android:padding="@dimen/_4sdp" />
+
+            <FrameLayout
+                android:id="@+id/home_frmOffers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Offers"
+                    android:textColor="@color/darkBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtOffersMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="sans-serif"
+                    android:padding="@dimen/_5sdp"
+                    android:text="MORE"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#ccc" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_125sdp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvOffers"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_125sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="No Offer Available"
+                    android:textColor="#111"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/home_frmNearBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="left"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Nearby"
+                    android:textColor="@color/darkBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtNearByMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:fontFamily="sans-serif"
+                    android:text="MORE"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#ccc" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_125sdp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvNearBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_125sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtNearBy"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Please Select Another Location"
+                    android:textColor="#111"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/home_frmBeatmakers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:fontFamily="sans-serif"
+                    android:text="Artist"
+                    android:textColor="@color/darkBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/home_txtBeatmakersMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="sans-serif"
+                    android:padding="@dimen/_5sdp"
+                    android:text="MORE"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13sdp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#ccc" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvBeatmakers"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_107sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

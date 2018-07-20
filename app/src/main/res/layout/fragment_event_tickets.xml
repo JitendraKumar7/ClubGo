@@ -1,0 +1,426 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="in.clubgo.app.events.FragmentTickets">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/_7sdp"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/_7sdp"
+        android:text="Select Time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/ticket_txtGreen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/green"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_7sdp"
+        android:text="FREE ENTRY BEFORE 10 PM"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_1sdp"
+        android:paddingTop="@dimen/_1sdp">
+
+        <TextView
+            android:id="@+id/ticket_txtTime1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/ticket_txtTime2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/_7sdp"
+        android:text="Select Ticket"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_1sdp"
+        android:paddingTop="@dimen/_1sdp">
+
+        <TextView
+            android:id="@+id/ticket_txtTicket1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="EarlyBird "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ticket_txtTicket2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Regular"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ticket_txtTicket3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="VIP"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ticket_txtTicket4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="VVIP"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <ImageView
+            android:id="@+id/img_couple1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@mipmap/ticket_couple" />
+
+        <TextView
+            android:id="@+id/ticket_txtCouplePriceDiscounted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img_couple1"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ticket_txtCouplePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ticket_txtCouplePriceDiscounted"
+            android:fontFamily="sans-serif"
+            android:textColor="#DF3C4D"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/ticket_txtCouplePriceDescription"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ticket_txtCouplePrice"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_toRightOf="@+id/img_couple1"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/ticket_ivMinus1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ticket_txtCoupleCount"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/sub" />
+
+        <TextView
+            android:id="@+id/ticket_txtCoupleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ticket_ivPlus1"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ticket_ivPlus1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/add" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <ImageView
+            android:id="@+id/img_couple2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@mipmap/ticket_female" />
+
+        <TextView
+            android:id="@+id/ticket_txtFemalePriceDiscounted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img_couple2"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ticket_txtFemalePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ticket_txtFemalePriceDiscounted"
+            android:fontFamily="sans-serif"
+            android:textColor="#DF3C4D"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/ticket_txtFemalePriceDescription"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ticket_txtFemalePrice"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_toRightOf="@+id/img_couple2"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/ticket_ivPlus2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/add" />
+
+        <TextView
+            android:id="@+id/ticket_txtFemaleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ticket_ivPlus2"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ticket_ivMinus2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ticket_txtFemaleCount"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/sub" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <ImageView
+            android:id="@+id/img_couple3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@mipmap/ticket_male" />
+
+        <TextView
+            android:id="@+id/ticket_txtMalePriceDiscounted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img_couple3"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ticket_txtMalePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ticket_txtMalePriceDiscounted"
+            android:fontFamily="sans-serif"
+            android:textColor="#DF3C4D"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/ticket_txtMalePriceDescription"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ticket_txtMalePrice"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_toRightOf="@+id/img_couple3"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/ticket_ivPlus3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/add" />
+
+        <TextView
+            android:id="@+id/ticket_txtMaleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ticket_ivPlus3"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ticket_ivMinus3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ticket_txtMaleCount"
+            android:padding="@dimen/_15sdp"
+            android:src="@mipmap/sub" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/txt_Charge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/Male_view1"
+        android:background="@color/white"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/_7sdp"
+        android:text="All Charges Payable at Venue"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

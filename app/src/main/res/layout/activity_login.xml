@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:paddingTop="@dimen/_20sdp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/login_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_90sdp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#0000"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:text="ClubGo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_50sdp" />
+
+                <TextView
+                    android:id="@+id/subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:text="Your Nightlife Conceirge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/login_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/login_txtEmail"
+                style="@style/ContentTextView"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:hint="Email id*"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:id="@+id/login_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_7sdp" />
+
+            <EditText
+                android:id="@+id/login_txtPassword"
+                style="@style/ContentTextView"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Password*"
+                android:inputType="textWebPassword" />
+
+            <View
+                android:id="@+id/login_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/login_txtLogin"
+                style="@style/ContentText"
+                android:text="LogIn"
+                android:textAllCaps="true" />
+
+            <View
+                android:id="@+id/login_view5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/login_txtForgotPassword"
+                style="@style/ContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@null"
+                android:text="Forgot Password?"
+                android:textStyle="italic" />
+
+            <TextView
+                style="@style/ContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_1sdp"
+                android:background="@null"
+                android:padding="@dimen/_1sdp"
+                android:text="OR"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/startup_ivFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_27sdp"
+                android:layout_marginRight="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_facebook" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_12sdp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/prv_w" />
+
+</RelativeLayout>

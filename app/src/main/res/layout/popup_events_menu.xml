@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000">
+
+    <FrameLayout
+        android:id="@+id/menu_frmLocate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_frmShare">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:text="Locate"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/locatee" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_frmShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_frmBookCab">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:text="Share"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/share" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_frmBookCab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@+id/menu_frmCallUs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:text="Book A Cab"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/cab" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_frmCallUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_frmCancel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:text="Call Us"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/calll" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_frmCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp">
+
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/cancell" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

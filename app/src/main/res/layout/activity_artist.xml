@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_40sdp"
+    tools:context="in.clubgo.app.artiest.ActivityArtist">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_2sdp" />
+</android.support.v4.widget.SwipeRefreshLayout>

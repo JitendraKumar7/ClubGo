@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_singleDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_2sdp">
+
+    <ImageView
+        android:id="@+id/event_ivMain"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_7sdp"
+        android:src="@mipmap/oval" />
+
+    <TextView
+        android:id="@+id/event_txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/event_ivMain"
+        android:text="Title Text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/event_txtSubTitle"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_txtTitle"
+        android:layout_alignStart="@+id/event_txtTitle"
+        android:layout_below="@+id/event_txtTitle"
+        android:text="SingleText"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "209458310973",
+    "firebase_url": "https://clubgo-48ce7.firebaseio.com",
+    "project_id": "clubgo-48ce7",
+    "storage_bucket": "clubgo-48ce7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209458310973:android:2a724d19817f1529",
+        "android_client_info": {
+          "package_name": "in.clubgo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209458310973-f6gu7rb7bfekthkj7isomuoj5rcjdfmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJtEnbZAulfrdsrxSIesmaW8DDttsOGPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

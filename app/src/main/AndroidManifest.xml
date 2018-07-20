@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.defuzed.clubgo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="in.clubgo.app.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="in.clubgo.app.main.ActivitySplash"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.clubgo.app.main.ActivityStartUp"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.clubgo.app.main.ActivitySignUp"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.clubgo.app.main.ActivityLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="in.clubgo.app.home.ActivityHome"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.clubgo.app.events.ActivityEvents"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.venues.ActivityVenue"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.artiest.ActivityArtist"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.filter.ActivityFilters"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.venues.ActivityLists"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.artiest.ActivityArtistDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.location.ActivityLocation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.events.ActivityEventsDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="in.clubgo.app.home.ActivityOffers"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider804117263043650"
+            android:exported="true" />
+        -->
+        <activity
+            android:name="in.clubgo.app.map.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity android:name="in.clubgo.app.wishlist.ActivityWishList" />
+        <activity android:name="in.clubgo.app.venues.ActivityVenuesDetails" />
+        <activity android:name="in.clubgo.app.review.ActivityReview" />
+        <activity android:name="in.clubgo.app.image_slider.ActivityImageSlider" />
+        <activity android:name="in.clubgo.app.book.ActivityBook" />
+        <activity android:name="in.clubgo.app.book.ActivityVIPTable" />
+        <activity android:name="in.clubgo.app.Tickets.ActivityTickets" />
+        <activity android:name="in.clubgo.app.about.ActivityAbout" />
+        <activity android:name="in.clubgo.app.otp.ActivityOTP" />
+        <activity android:name="in.clubgo.app.facebook.ActivityFacebook" />
+
+        <!-- Defining Services -->
+        <service android:name="in.clubgo.app.listener.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="in.clubgo.app.listener.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="in.clubgo.app.listener.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="in.clubgo.app.listener.SmsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

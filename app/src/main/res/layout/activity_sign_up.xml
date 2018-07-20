@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    tools:context="in.clubgo.app.main.ActivitySignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/signup_view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_27sdp"
+                android:layout_marginRight="@dimen/_27sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ClubGo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_50sdp" />
+
+                <TextView
+                    android:id="@+id/subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Your Nightlife Conceirge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/signup_txtName"
+                style="@style/ContentTextView"
+                android:hint="Username*" />
+
+            <EditText
+                android:id="@+id/signup_txtEmail"
+                style="@style/ContentTextView"
+                android:hint="Email*"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/signup_txtContact"
+                style="@style/ContentTextView"
+                android:hint="Contact No*"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/signup_txtPassword"
+                style="@style/ContentTextView"
+                android:hint="Password*"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/signup_txtConfirmPasss"
+                style="@style/ContentTextView"
+                android:hint="Confirm Password*"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/signup_txtDOB"
+                style="@style/ContentTextView"
+                android:hint="Date Of Birth  dd/mm/yyyy"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/signup_txtAnniversary"
+                style="@style/ContentTextView"
+                android:hint="Anniversary"
+                android:inputType="date" />
+
+            <TextView
+                style="@style/ContentText"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_1sdp"
+                android:text="Agree To Terms And Conditions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <CheckBox
+                android:id="@+id/signup_checkBox"
+                style="@style/ContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/checkbox_selecter"
+                android:singleLine="false"
+                android:text="I accept the Terms &amp; Conditions and Privacy Policy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/signup_txtBtnSignUp"
+                style="@style/ContentText"
+                android:text="SignUP"
+                android:textAllCaps="true" />
+
+            <View
+                android:id="@+id/signup_view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:padding="@dimen/_12sdp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/prv_w" />
+
+</RelativeLayout>
